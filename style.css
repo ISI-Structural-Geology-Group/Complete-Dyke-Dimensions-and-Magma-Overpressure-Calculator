@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    float: left; /* Align the image to the left */
+    margin-right: 20px; /* Space between image and the rest of the content */
+    margin-top: 0; /* Ensure it aligns with the top */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 5px 20px; /* Adjust padding for smaller button height */
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px; /* Adjust font size as desired */
+    height: auto; /* Ensures button height is based on padding */
+    line-height: 1.5; /* Controls vertical alignment of text */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.box {
+    border: 0px solid black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.left-box {
+    text-align: left;
+}
+
+.right-box {
+    text-align: right;
+}
+

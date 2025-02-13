@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage: Magma Overpressure Estimation from Partially Exposed Dykes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-container {
+            float: left;
+            /* Align the image to the left */
+            margin-right: 20px;
+            /* Space between image and the rest of the content */
+            margin-top: 0;
+            /* Ensure it aligns with the top */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            margin-left: 10px;
+            padding: 5px 20px;
+            /* Adjust padding for smaller button height */
+            text-decoration: none;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            /* Adjust font size as desired */
+            height: auto;
+            /* Ensures button height is based on padding */
+            line-height: 1.5;
+            /* Controls vertical alignment of text */
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #388E3C;
+        }
+
+        .box {
+            border: 0px solid black;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        .left-box {
+            text-align: left;
+        }
+
+        .right-box {
+            text-align: right;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container2">
+        <!-- Left-Aligned Image -->
+        <div class="image-container">
+            <img src="logo.png" alt="Image" width="400" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Right-Aligned Buttons -->
+        <div class="button-container">
+            <a href="people.html" class="btn"
+                style="font-size: 20px; padding: 8px 20px;">People</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="LICENSE" class="btn"
+                style="font-size: 20px; padding: 8px 20px;">License</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div style="align-content: center;">
+
+        <h1>Magma Overpressure Estimation from Partially Exposed Dykes</h1>
+        <h2>Biswas et al. (2023 & 2025)</h2>
+        <p>Knowledge of complete dyke dimensions is crucial to determine the actual aspect ratio which is indispensable
+            in estimating their magma overpressure, depth of origin and even explosivity potential of fissure eruptions.
+            A dearth of completely exposed dykes imposes considerable uncertainty on estimates of their aspect ratios.
+            Therefore, we introduce mathematical methods of estimating complete dyke dimensions from their partial
+            exposures consisting at least one visible tip or devoid of any tip. The methods are built upon the idealized
+            canonical model of opening mode fractures and utilizes the elliptical shape of opening of dykes in 2D as
+            formulated in the model. Although developed for dykes, the methods have potential for wider application,
+            since they can be used fundamentally to predict complete dimensions of any elliptical shaped natural
+            features from their partial exposures.</p>
+        <h2>1. Partial dyke exposure with one visible tip</h2>
+        <p>This method (Biswas et al. 2023) solves the equation of ellipse which is the predicted shape of dyke opening
+            in the canonical model using every possible combination of two points lying on the dyke margin measured from
+            the observed tip to estimate the full length, maximum width and aspect ratio.
+        <p>
+        <p>Cite this method as: "Biswas, S. K., Saha, K., Das, G., and Mondal, T. K. (2023). Estimation of magma
+            overpressure
+            from partially exposed dykes-A new approach. Journal of Structural Geology, 168, 104822." This paper can be
+            found at the following DOI:</p>
+        <p><a href="https://doi.org/10.1016/j.jsg.2023.104822" target="_blank"
+                style="font-size:1.0vw">https://doi.org/10.1016/j.jsg.2023.104822</a></p>
+        <img src="one_tip.png" alt="With Tip" width="800">
+        <p><a href="one_tip.html" target="_blank" style="font-size:1.5vw">Estimate complete dyke dimensions</a></p>
+        <br />
+        <h2>2. Partial dyke exposure with no visible tip</h2>
+        <p>This method (Biswas et al. 2025) utilizes discrete derivatives derived from limited outcrop measurements made
+            on dyke margins in the differential equations of ellipse, which is the predicted shape of fracture opening
+            in the canonical model, to estimate the full length, maximum width and aspect ratio.</p>
+        <p>Cite this method as: "Biswas, S.K., Mondal, T. K., Saha, A., Mukhopadhyay A.K., and Mukherjee A. (2025).
+            Estimating Complete Dyke Dimensions from Partial Exposures. Journal of Structural Geology,
+            192, 105350." This paper can be found at the following DOI:</p>
+        <p><a href="https://doi.org/10.1016/j.jsg.2025.105350" target="_blank"
+                style="font-size:1.0vw">https://doi.org/10.1016/j.jsg.2025.105350</a></p>
+        <img src="no_tip.png" alt="Without Tip" width="800">
+        <p><a href="no_tip.html" target="_blank" style="font-size:1.5vw">Estimate complete dyke dimensions</a></p>
+    </div>
+    <br />
+    <hr />
+    <div class="container">
+        <div class="box left-box">
+            <p><a href="https://gsu.isical.ac.in/" target="_blank">https://gsu.isical.ac.in/</a></p>
+            <p><a href="https://sites.google.com/view/tridibkmondal/home" target="_blank">ISI GSU Structural Geology
+                    Group</a></p>
+            <p><a href="mailto:sirshendu.skb@gmail.com">&#x2709; sirshendu.skb@gmail.com </a></p>
+            <p><a href="mailto:tridibkumarmondal@gmail.com">&#x2709; tridibkumarmondal@gmail.com</a></p>
+        </div>
+        <div class="box right-box">
+            <p>&#169 ISI GSU Structural Geology</p>
+            <p>Geological Studies Unit (GSU)</p>
+            <p>Indian Statistical Institute (ISI) Kolkata</p>
+            <p><a href="https://maps.app.goo.gl/MpJpopr4xKG6uRUA7" target="_blank"><i
+                        class="fas fa-map-marker-alt"></i></a> 203 B.T. Road, Kolkata 700108, West Bengal, India</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

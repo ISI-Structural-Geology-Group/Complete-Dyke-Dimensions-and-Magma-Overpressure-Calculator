@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 ISI Structural Geology Group
+Copyright (c) 2025 Sirshendu Kumar Biswas, Tridib Kumar Mondal, Kuntal Saha, Gourav Das, Avijit Saha, Alaap Kumar Mukhopadhyay, Archishman Mukherjee
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

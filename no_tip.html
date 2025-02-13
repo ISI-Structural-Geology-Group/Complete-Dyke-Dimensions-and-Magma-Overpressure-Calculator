@@ -5,26 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No Tip Exposed: Calculate Complete Dyke Dimensions</title>
+  <script src="embeddings.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="container2">
-    <!-- Left-Aligned Image -->
-    <div class="image-container">
-      <img src="images/logo.png" alt="Image" width="400" style="max-width: 100%; height: auto;">
-    </div>
-
-    <!-- Right-Aligned Buttons -->
-    <div class="button-container">
-      <a href="people.html" class="btn"
-        style="font-size: 20px; padding: 8px 20px;">People</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="license.html" class="btn"
-        style="font-size: 20px; padding: 8px 20px;">License</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-  </div>
-  <div class="container">
+  <header w3-include-html="header.inc.html"></header>
+  <main class="container">
     <h1>Complete Dyke Dimensions Calculator</h1>
     <h3>Partial dyke exposure with no visible tip</h3>
 
@@ -72,26 +60,13 @@
     <button onclick="calculateResult()" style="margin-top: 20px; font-size: 18px;">Calculate</button>
     <h3>Result: <span id="resultValue">-</span></h3>
 
-  </div>
-  <hr>
-  </hr>
-  <div class="container1">
-    <div class="box left-box">
-      <p><a href="https://gsu.isical.ac.in/" target="_blank">https://gsu.isical.ac.in/</a></p>
-      <p><a href="https://sites.google.com/view/tridibkmondal/home" target="_blank">ISI GSU Structural Geology Group</a>
-      </p>
-      <p><a href="mailto:sirshendu.skb@gmail.com">&#x2709; sirshendu.skb@gmail.com </a></p>
-      <p><a href="mailto:tridibkumarmondal@gmail.com">&#x2709; tridibkumarmondal@gmail.com</a></p>
-    </div>
-    <div class="box right-box">
-      <p>&#169 ISI GSU Structural Geology</p>
-      <p>Geological Studies Unit (GSU)</p>
-      <p>Indian Statistical Institute (ISI) Kolkata</p>
-      <p><a href="https://maps.app.goo.gl/MpJpopr4xKG6uRUA7" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
-        203 B.T. Road, Kolkata 700108, West Bengal, India</p>
-    </div>
-  </div>
+  </main>
+  <hr />
+  <footer w3-include-html="footer.inc.html"></footer>
   <script src="no_tip.js"></script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 
 </html>

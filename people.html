@@ -5,155 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People: Magma Overpressure Estimation from Partially Exposed Dykes</title>
-    <style>
-        /* Page Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        /* Faculty Grid */
-        .faculty-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        /* Faculty Card */
-        .faculty-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: 250px;
-        }
-
-        /* Faculty Image */
-        .faculty-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #3498db;
-        }
-
-        /* Faculty Name */
-        .faculty-card h3 {
-            margin: 10px 0 5px;
-            color: #333;
-        }
-
-        /* Faculty Email */
-        .faculty-card p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .faculty-card a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .faculty-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .container2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .image-container {
-            float: left;
-            /* Align the image to the left */
-            margin-right: 20px;
-            /* Space between image and the rest of the content */
-            margin-top: 0;
-            /* Ensure it aligns with the top */
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .btn {
-            margin-left: 10px;
-            padding: 5px 20px;
-            /* Adjust padding for smaller button height */
-            text-decoration: none;
-            border: 2px solid #4CAF50;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            /* Adjust font size as desired */
-            height: auto;
-            /* Ensures button height is based on padding */
-            line-height: 1.5;
-            /* Controls vertical alignment of text */
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #388E3C;
-        }
-
-        .box {
-            border: 0px solid black;
-            padding: 5px 10px;
-            display: inline-block;
-        }
-
-        .left-box {
-            text-align: left;
-        }
-
-        .right-box {
-            text-align: right;
-        }
-    </style>
+    <script src="embeddings.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container2">
-        <!-- Left-Aligned Image -->
-        <div class="image-container">
-            <img src="images/logo.png" alt="Image" width="400" style="max-width: 100%; height: auto;">
-        </div>
-
-        <!-- Right-Aligned Buttons -->
-        <div class="button-container">
-            <a href="index.html" class="btn"
-                style="font-size: 20px; padding: 8px 20px;">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="license.html" class="btn"
-                style="font-size: 20px; padding: 8px 20px;">License</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
-    </div>
+    <header w3-include-html="header.inc.html"></header>
 
     <h1>Team Members</h1>
     <div class="faculty-container">
@@ -167,12 +25,12 @@
 
         <!-- Faculty Member 2 -->
         <div class="faculty-card">
-            <img src="sirshendu.images/skb.jpg" alt="Dr. Jane Smith">
+            <img src="images/sirshendu.skb.jpg" alt="Dr. Jane Smith">
             <h3>Sirshendu Kumar Biswas</h3>
             <p>Senior Research Fellow, GSU, Indian Statistical Institute Kolkata</p>
             <p>&#x2709; <a href="mailto:sirshendu.skb@gmail.com">sirshendu.skb@gmail.com</a></p>
         </div>
-    </div><br></br>
+    </div><br />
 
     <div class="faculty-container">
         <!-- Faculty Member 1 -->
@@ -199,7 +57,7 @@
             <p>&#x2709; <a href="mailto:kmalaap@gmail.com">kmalaap@gmail.com</a></p>
         </div>
     </div>
-    <br></br>
+    <br />
     <div class="faculty-container">
         <!-- Faculty Member 1 -->
         <div class="faculty-card">
@@ -211,31 +69,17 @@
 
         <!-- Faculty Member 2 -->
         <div class="faculty-card">
-            <img src="images/sahakuntal616.jpg" alt="Dr. Jane Smith">
+            <img src="images/sahakuntal616.png" alt="Dr. Jane Smith">
             <h3>Kuntal Saha</h3>
             <p>MSc, Department of Geology, Presidency University, Kolkata</p>
             <p>&#x2709; <a href="mailto:sahakuntal616@gmail.com">sahakuntal616@gmail.com</a></p>
         </div>
     </div>
-    <hr>
-    </hr>
-    <div class="container">
-        <div class="box left-box">
-            <p><a href="https://gsu.isical.ac.in/" target="_blank">https://gsu.isical.ac.in/</a></p>
-            <p><a href="https://sites.google.com/view/tridibkmondal/home" target="_blank">ISI GSU Structural Geology
-                    Group</a></p>
-            <p><a href="mailto:sirshendu.skb@gmail.com">&#x2709; sirshendu.skb@gmail.com </a></p>
-            <p><a href="mailto:tridibkumarmondal@gmail.com">&#x2709; tridibkumarmondal@gmail.com</a></p>
-        </div>
-        <div class="box right-box">
-            <p>&#169 ISI GSU Structural Geology</p>
-            <p>Geological Studies Unit (GSU)</p>
-            <p>Indian Statistical Institute (ISI) Kolkata</p>
-            <p><a href="https://maps.app.goo.gl/MpJpopr4xKG6uRUA7" target="_blank"><i
-                        class="fas fa-map-marker-alt"></i></a> 203 B.T. Road, Kolkata 700108, West Bengal, India</p>
-        </div>
-    </div>
-
+    <hr />
+    <footer w3-include-html="footer.inc.html"></footer>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

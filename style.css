@@ -1,7 +1,26 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
     text-align: center;
-    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 input {
@@ -14,7 +33,8 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
@@ -23,28 +43,26 @@ th, td {
 th {
     background-color: #f4f4f4;
 }
+
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-  }
+}
 
-.container1 {
+footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .image-container {
-    float: left; /* Align the image to the left */
-    margin-right: 20px; /* Space between image and the rest of the content */
-    margin-top: 0; /* Ensure it aligns with the top */
+    float: left;
+    /* Align the image to the left */
+    margin-right: 20px;
+    /* Space between image and the rest of the content */
+    margin-top: 0;
+    /* Ensure it aligns with the top */
 }
 
 .button-container {
@@ -54,15 +72,19 @@ button {
 
 .btn {
     margin-left: 10px;
-    padding: 5px 20px; /* Adjust padding for smaller button height */
+    padding: 5px 20px;
+    /* Adjust padding for smaller button height */
     text-decoration: none;
     border: 2px solid #4CAF50;
     border-radius: 5px;
     background-color: #4CAF50;
     color: white;
-    font-size: 16px; /* Adjust font size as desired */
-    height: auto; /* Ensures button height is based on padding */
-    line-height: 1.5; /* Controls vertical alignment of text */
+    font-size: 16px;
+    /* Adjust font size as desired */
+    height: auto;
+    /* Ensures button height is based on padding */
+    line-height: 1.5;
+    /* Controls vertical alignment of text */
     transition: background-color 0.3s ease;
 }
 
@@ -84,3 +106,106 @@ button {
     text-align: right;
 }
 
+/* Faculty Grid */
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Faculty Card */
+.faculty-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+/* Faculty Image */
+.faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+}
+
+/* Faculty Name */
+.faculty-card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* Faculty Email */
+.faculty-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.faculty-card a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .faculty-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.image-container {
+    float: left;
+    /* Align the image to the left */
+    margin-right: 20px;
+    /* Space between image and the rest of the content */
+    margin-top: 0;
+    /* Ensure it aligns with the top */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 5px 20px;
+    /* Adjust padding for smaller button height */
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    /* Adjust font size as desired */
+    height: auto;
+    /* Ensures button height is based on padding */
+    line-height: 1.5;
+    /* Controls vertical alignment of text */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.box {
+    border: 0px solid black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.left-box {
+    text-align: left;
+}
+
+.right-box {
+    text-align: right;
+}

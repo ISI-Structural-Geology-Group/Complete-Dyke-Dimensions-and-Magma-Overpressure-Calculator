@@ -201,7 +201,7 @@ function displayResults(results, finalResult) {
       <td>${finalResult.params["B"]}</td>
       <td>${finalResult.params["B/A"]}</td>
     `;
-  tbody.appendChild(finalRow);
+  // tbody.appendChild(finalRow);
 }
 let aspectRatio = null, youngModulus = null, poissonRatio = null;
 

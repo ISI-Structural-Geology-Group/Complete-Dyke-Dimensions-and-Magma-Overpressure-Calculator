@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partial mixed Mode I-III dyke One Tip Exposed: Calculate Complete Dyke Dimensions</title>
+    <script src="embeddings.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header w3-include-html="header.inc.html"></header>
+    <main>
+        <h1>Complete Dyke Dimensions Calculator</h1>
+        <h3>Partial mixed Mode I-III dyke exposure with one visible tip</h3>
+
+        <img src="images/mixed_mode_one_tip.png" alt="Dyke Diagram" width="900">
+        <br><br>
+        <h4>Enter CSV containing Dyke Margin Coordinates</h4>
+        <!-- Download example CSV button -->
+        <a href="mixed_mode_one tip.csv" download="mixed_mode_one_tip.csv">
+          <button type="button">Download Example CSV</button>
+        </a>
+        <br><br>
+        <input type="file" id="fileInput" accept=".csv"><br><br>
+
+        <label for="xColumn">Select X Column:</label>
+        <select id="xColumn"></select>
+
+        <label for="yColumn">Select Y Column:</label>
+        <select id="yColumn"></select>
+
+        <button id="processButton">Process CSV</button>
+
+        <table id="outputTable"></table>
+
+        <hr> <!-- Horizontal line to separate sections -->
+
+        <h1>Magma Overpressure Calculator</h1>
+        <h4>Enter Dyke Parameters</h4>
+
+        <label for="aspectRatio">Aspect ratio of dyke (B/A):</label>
+        <input type="number" id="aspectRatio" step="any">
+        <button onclick="setAspectRatio()">Set</button>
+        <p>Value: <span id="aspectRatioValue">-</span></p>
+
+        <label for="youngModulus">Young&#39;s modulus of host rock (E) (GPa):</label>
+        <input type="number" id="youngModulus" step="any">
+        <button onclick="setYoungModulus()">Set</button>
+        <p>Value: <span id="youngModulusValue">-</span></p>
+
+        <label for="poissonRatio">Poisson&#39;s ratio of host rock (&nu;):</label>
+        <input type="number" id="poissonRatio" step="any">
+        <button onclick="setPoissonRatio()">Set</button>
+        <p>Value: <span id="poissonRatioValue">-</span></p>
+
+        <label for="magmaOverpressure">Magma overpressure of dyke (P<sub>o</sub>) (MPa):</label>
+        <!-- <input type="number" id="magmaOverpressure" step="any">
+    <button onclick="setMagmaOverpressure()">Set</button>
+    <p>Value: <span id="magmaOverpressureValue">-</span></p> -->
+
+        <button onclick="calculateResult()" style="margin-top: 20px; font-size: 18px;">Calculate</button>
+        <h3>Result: <span id="resultValue">-</span></h3>
+
+    </main>
+    <hr />
+    <footer w3-include-html="footer.inc.html"></footer>
+    <script src="one_tip.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
